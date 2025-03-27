@@ -20,7 +20,7 @@ Requires [Steammodded](https://github.com/Steamodded/smods), like any other basi
 
 ## Bacon Hams
 ![bacon_hams](https://github.com/user-attachments/assets/58322255-9187-43fd-b1ed-2c40d44f0049)
-#### Earn $2 per #10 owned + $4 at end of round. 1 in 1,000 chance this card is destroyed at end of round.
+#### Earn $2 per $10 owned + $4 at end of round. 1 in 1,000 chance this card is destroyed at end of round.
 - Common Joker
 - $5 cost
 - Blueprint compatibility: None
