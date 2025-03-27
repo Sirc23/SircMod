@@ -52,7 +52,7 @@ SMODS.Atlas({
 			unlocked = true,
 			discovered = true,
 			blueprint_compat = false,
-			eternal_compat = true,
+			eternal_compat = false,
 			cost_mult = 1.0,
 			loc_vars = function(self, info_queue, card)
 				return {vars = {card.ability.extra.money_earned, card.ability.extra.denominator, G.GAME.probabilities.normal} }
