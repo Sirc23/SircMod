@@ -422,12 +422,12 @@ SMODS.Atlas({
         end
     end
 	
-	--Same as Hans Baron
+	--Same as Baron Hans
 	SMODS.Jokers.j_hams_bacon.calculate = function(self, context)
         if context.end_of_round and context.cardarea == G.jokers and not context.repetition and context.game_over == false and not context.blueprint then
 			local myrandom = pseudorandom(self.ability.name)
 			sendDebugMessage(self.ability.name .. ":: Running " .. G.GAME.probabilities.normal .. " in " .. self.ability.extra.denominator .. " odds")
-			sendDebugMessage(self.ability.name .. ":: " .. myrandom .. " < " .. G.GAME.probabilities.normal / self.ability.extra.denominator .. " = " .. (myrandom < G.GAME.probabilities.normal / self.ability.extra.denominator))
+			sendDebugMessage(self.ability.name .. ":: " .. myrandom .. " < " .. G.GAME.probabilities.normal / self.ability.extra.denominator .. " = " .. tostring(myrandom < G.GAME.probabilities.normal / self.ability.extra.denominator))
 			if pseudorandom(self.ability.name) < G.GAME.probabilities.normal / self.ability.extra.denominator then
 				G.E_MANAGER:add_event(Event({
 					func = function()
