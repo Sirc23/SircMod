@@ -4,7 +4,7 @@ Balatro Joker mod made by Sirc (yours truly).
 
 Introduces 5 new Jokers that are intended to be balanced around the vanilla experience.
 
-Created as a submission for a friend's modded Balatro tournament. (video link soon)
+Created as a submission for a friend's modded Balatro tournament. (https://youtu.be/pGtL845Z2c4?si=GjVSIo1ZpOoTuzK3)
 
 Requires [Steammodded](https://github.com/Steamodded/smods), like any other basic Joker mod. To install, just drop the SircMod folder into the mods folder.
 
