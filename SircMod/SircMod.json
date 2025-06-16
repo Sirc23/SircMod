@@ -1,17 +1,17 @@
 {
-    "id": "SircMod",
-    "name": "SircMod",
-    "display_name": "Sirc\'s Jokers",
-    "author": [
-        "Sirc"
-    ],
-    "description": "Yet another small Joker pack",
-    "prefix": "sirc",
-    "main_file": "SircMod.lua",
-	"priority": 0,
-    "version": "1.0.0",
-    "badge_colour": "393347",
+	"id": "SircMod",
+	"name": "SircMod",
+	"author": ["Sirc"],
+    "badge_colour": "0047AA",
+	"description": "test",
+	"prefix": "sirc",
+	"main_file": "SircMod.lua",
+    "version": "0.2.0",
+    "priority": 0,
     "dependencies": [
-        "Steamodded (>=1.0.0~ALPHA-1307d)"
+        "Steamodded (>=1.0.0~ALPHA-1206c)",
+        "Lovely (>=0.6.0)"
+    ],
+    "conflicts": [
     ]
 }

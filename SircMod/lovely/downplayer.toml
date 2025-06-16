@@ -1,0 +1,30 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+#Downplay
+[[patches]]
+[patches.regex]
+target = "functions/common_events.lua"
+pattern = '''(?<indent>[\t ]*)function level_up_hand\(card, hand, instant, amount\)\n[\s\S][\s\S][\s\S][\s\S]amount = amount or 1'''
+position = "after"
+line_prepend = "$indent"
+payload = '''
+--sirc downplayer
+    if amount < 0 then
+	    for j=1, #G.jokers.cards do
+		    if G.jokers.cards[j].config.center.key == "j_sirc_downplayer" and not G.jokers.cards[j].debuff then
+			    G.jokers.cards[j].ability.extra.mult = G.jokers.cards[j].ability.extra.mult + G.jokers.cards[j].ability.extra.mult_gained
+				card_eval_status_text(G.jokers.cards[j], 'extra', nil, nil, nil, { message = "Downplayed!", colour = G.C.RED});
+				--G.E_MANAGER:add_event(Event({
+                --    func = function()
+                --        G.jokers.cards[j]:juice_up()
+                --        return true
+                --    end
+                --})) 
+			end
+        end
+	end
+'''
+times = 1
